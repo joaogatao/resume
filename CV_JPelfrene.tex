@@ -1,0 +1,345 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[UprightFont = Fontin-Regular, SmallCapsFont = Fontin-SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage[style=authoryear, backend=biber, maxbibnames=99]{biblatex}
+\addbibresource{biblio.bib}
+%\bibliography{biblio}
+%\usepackage[nottoc]{tocbibind}
+%\usepackage{natbib}
+
+\usepackage{graphicx}
+%\usepackage[dvips,xetex]{graphicx}
+%\usepackage{ifpdf,mla}% <-- mla.sty requires ifpdf.sty, but (perversely) doesn't load it
+%\usepackage{fontspec}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge dr. ir. Joren \textsc{Pelfrene}}\bigskip\par} % Your name
+
+\begin{figure}
+\centering
+\includegraphics[width=4.5cm]{jp_round_16dpi.png}
+\end{figure}
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Ghent, Belgium  | 18 November 1986 \\
+%\textsc{Address:} & 72 Bouwmeestersstraat, 9040 Ghent, Belgium \\
+\textsc{Phone:} & +32 471 624 565 | +62 813 8649 6328\\
+\textsc{email:} & \href{mailto:joren.pelfrene@posteo.be}{joren.pelfrene@posteo.be}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{12cm}}
+\emph{Current} & Postdoctoral Researcher at \textsc{Ghent University}, Belgium \\
+\textsc{July 2017} & \emph{in Research Group ``Mechanics of Materials and Structures''}\\ 
+& \small{Research project in collaboration with Bridon-Bekaert}\\
+& \small{Numerical modelling of composite materials}\\
+& \small{Thesis promotor for 1 Master student: experimental characterisation of pultruded FRP composite materials}\\
+& \small{Teaching activities: Practical course on design and production of fibre reinforced plastics (introductory level), supervisor of numerical thesis on composite violins (for Tim Duerinck)}\\
+%\multicolumn{2}{c}{} \\
+\\
+
+
+%------------------------------------------------
+
+
+\emph{Sep 2016} & Doctoral Researcher at \textsc{Ghent University}, Belgium \\
+\textsc{Feb 2012} & \emph{in Research Group ``Mechanics of Materials and Structures''}\\ 
+& \small{PhD study on impact and blast loading on laminated glass facades: numerical simulation and experimental validation. Promotor: prof. dr. ir. Wim Van Paepegem}\\
+& \small{Member of COST Action TU0905 ``Structural Glass'', Task Group 7: Numerical Modelling}\\
+& \small{Invited to teach at ESR Workshop on numerical modelling of structural glass, EPFL Lausanne, Feb 2014}\\
+& \small{Teaching activities: Practical course on design and production of fibre reinforced plastics (introductory level), supervisor of 8 MSc thesis students}\\
+& \small{Award: best presentation at SIMULIA User's Meeting 2015}\\
+%\multicolumn{2}{c}{} \\
+\\
+
+
+%------------------------------------------------
+
+\emph{Up to 2011} & Various summer jobs \\
+
+& \small{Project7: damage repair of carbon fibre components at Le Mans 24h, 2009}\\
+& \small{Trefpunt VZW: technician for electrical installations during 4 editions of Gentse Feesten, 2 editions as head of electrical team}\\
+
+%\multicolumn{2}{c}{} \\
+
+
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{13cm}}	
+
+ 2016 & PhD in \textsc{Electromechanical Engineering},\\
+& \textbf{Ghent University}, Belgium\\
+& \small{Thesis: ``Numerical Analysis of the Post-Fracture Response of Laminated Glass under Impact and Blast Loading''}
+%| \small Promotor: Prof. dr. ir. W. \textsc{Van Paepegem}
+\\
+&\\
+
+%------------------------------------------------
+
+ 2011 & Master of Science in \textsc{Electromechanical Engineering: Maritime Technology},\\
+& \textbf{Ghent University}, Belgium\\
+& \small\emph{Great Distinction} | Major: Naval Architecture\\
+& \small{Thesis: ``Study of the SPH Method for Simulation of Regular and Breaking Waves''}\\ 
+& \small{Exchange Year at \textbf{Instituto Superior Tecnico}, Lisbon, Portugal}\\
+%| \small Promotor: Prof. dr. ir. W. \textsc{Van Paepegem}\\
+%&\normalsize \textsc{Gpa}: 8.0/9.0\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+ 2009 & Bachelor of Science in \textsc{Electromechanical Engineering},\\
+& \textbf{Ghent University}, Belgium
+\\
+
+%------------------------------------------------
+
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL
+%----------------------------------------------------------------------------------------
+
+\section{Additional training}
+
+\begin{tabular}{rp{11cm}}	
+
+\textsc{November} 2018 & Technology Transfer Skills,\\
+ & \textbf{Ghent University}, Belgium\\
+ & \small{Funding of research and valorisation projects, intellectual property, valorisation contracts, entrepreneurship, negotiation skills, marketing \& commercialisation, creativity in innovation}\\
+
+&\\
+
+\textsc{September} 2014 & MUSIC Summer School,\\
+ & \textbf{Leibniz University}, Hannover, Germany\\
+ & \small{Multiscale Modelling of Interfaces and Advanced Solution Techniques,}\\
+
+&\\
+
+ \textsc{April} 2012 & COST Training School ``Structural Glass'',\\
+ & \textbf{Ghent University}, Belgium\\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING
+%----------------------------------------------------------------------------------------
+
+\section{Volunteering}
+
+\begin{tabular}{rp{11.7cm}}
+
+2018 - 2019 & Mentor2Work program: mentor for immigrant worker looking for engineering job \\
+ & \textbf{Minderhedenforum}, Belgium\\
+%& \small{Mentor2Work program: Guiding an incoming engineer in the Belgian job market to help find the job that best matches his aspirations. Sharing key experiences to reach his professional goals.} \\
+
+&\\
+2013 - 2015 & Mentoring program: mentor for ethnic minority student in engineering\\
+ & \textbf{Diversity and Gender Unit, Ghent University}, Belgium\\
+%& \small{Mentoring programme: follow up of incoming foreign or ethnic minority student during one academic year. Guidance on practical aspects of student life. Coaching their first year of studies to enhance independence and confidence to obtain a degree.} \\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\section{Languages}
+
+\begin{tabular}{rllll}
+	& Listening & Reading & Writing & Speaking \\
+	\hline
+	
+	\textsc{English:} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent}\\
+	
+	\textsc{Dutch:} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent}\\
+	
+	\textsc{French:} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent} & \footnotesize{Fluent}\\
+	
+	\textsc{Portuguese:} & \footnotesize{Basic} & \footnotesize{Good} & \footnotesize{Good} & \footnotesize{Basic}\\
+	
+	\textsc{Spanish:} & \footnotesize{Basic} & \footnotesize{Basic} & \footnotesize{Basic} & \footnotesize{Basic}\\
+	
+	\textsc{German:} & \footnotesize{Good} & \footnotesize{Good} & \footnotesize{Basic} & \footnotesize{Basic}\\
+	
+	\textsc{Italian:} & \footnotesize{Basic} & \footnotesize{Good} & \footnotesize{Basic} & \footnotesize{Basic}\\
+	
+	\textsc{Indonesian:} & \footnotesize{Learning} &  &  & \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+%  \section{Awards}
+
+%  Best Presentation Award at SIMULIA Users Meeting, 2015
+
+
+%\newpage
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Skills \& Experience}
+
+\begin{tabular}{r p{13.5cm}}
+\textbf{Software}: & \textsc{Abaqus}: \footnotesize{\begin{itemize}
+		\item Python scripting for Abaqus; adaptive and parametric model approach
+		\item Subroutines VUMAT, VUEL, UMAT, etc.
+		\item Optimisation with iSight or sciPy coupling
+		\item Fluid-Structure Interaction with SPH and CEL
+		\item Fracture with element deletion, SPH, XFEM, VCCT and Cohesive Zone Method
+		\item Nonlinear and anisotropic material characterisation for polymers and composites
+		\item Modal analysis and steady-state dynamics
+		\item Submodelling, Embedded Elements, Rebars
+		\item Crash analysis with post-fracture behaviour
+%		\item Homogenisation and model reduction
+	\end{itemize}}\\
+%       	Standard and Explicit; implementation of user-defined subroutines; optimisation by use of iSight and self-written Python scripts; SPH; CEL; various approaches to fracture modelling.}\\
+           & \textsc{LS-Dyna}: \footnotesize{\begin{itemize}
+           		\item SPH for free-surface water waves
+           		\item Fracture simulation with element deletion and SPH
+           		\item Crash analysis with post-fracture behaviour
+           		\item Textile simulation with dynamic relaxation solver
+           \end{itemize}} \\%\vspace{0.2cm} \\ 
+%       	dynamic, transient simulations; fracture modelling; SPH; ALE.
+           & Ansys Fluent, Calculix, SPHysics and Code-Aster: \footnotesize{Experience with other FEA and CFD codes} \vspace{0.2cm} \\ 
+           & \textsc{Gmsh}: \footnotesize{Mesh construction; export to ABAQUS or LS-DYNA} \vspace{0.2cm} \\ 
+
+& Mathematics: PyLab (Python alternative to Matlab), Maple, MS Excel \vspace{0.2cm} \\ 
+
+& Programming: Python scripting \& skills in C++, Fortran, Processing, QML \vspace{0.2cm} \\ 
+
+& Other: LaTeX, MS Office, SolidWorks, FreeCAD, Linux OS\\
+&\\
+
+\textbf{Technical}: 	& Experimental materials testing:\footnotesize{\begin{itemize}
+				\item Experience with hydraulic and electromechanical test benches for tensile and flexural testing
+				\item Application of extensometer and strain gauges
+				\item DMA testing of polymers (+ conversion of results into Gen. Maxwell model)
+				\item Resonalyser method: developed own framework for quick and cheap stiffness characterisation
+				\item Resistance technique for damage monitoring of CFRP in fatigue
+			\end{itemize}} \\
+			& FRP manufacturing with VIP, RTM, wet lay-up, prepreg and autoclave \\
+&\\
+
+\textbf{Other}:	& Teaching experience: \footnotesize{\begin{itemize}
+			\item Practical course on composites design and manufacturing (5 ac. years, BSc level)
+			\item Introductory class to Abaqus FEM (MSc level)
+			\item Introduction to user subroutines for Abaqus Explicit (PhD level)
+			\item Numerical simulation of brittle fracture (PhD level, at EPFL)
+		\end{itemize}} \\ %\vspace{0.2cm}
+	 	& Regular meetings and reporting for industrial partners (Bridon-Bekaert, Eastman, AGC)\vspace{0.2cm} \\ 
+		& Worked in research collaboration with TU Darmstadt, Eastman Co. and AGC \vspace{0.2cm} \\ 
+		& Active role in COST Action Task Group; organisation of pre-conference workshop\vspace{0.2cm} \\ 
+		& Published peer-reviewed articles and presented research at international conferences \vspace{0.2cm} \\ 
+		& Supervising and managing in total 11 Master students in their final thesis year \\
+
+\end{tabular}
+
+
+%\section{Further information}
+
+%I've always been eager to learn from senior colleagues and help others where I can. During my work at Ghent University, I've taken up a number of responsibilities; from maintenance of calculation pc's to conducting workgroup meetings. I have functioned as the go-to person for Master students who work with FEM and lecture the annual introduction class for Abaqus.\\
+%Being a sociable person, networking has never been a problem, especially with the opportunity given by the COST Action in my research field. The wide range of contacts from academic institutes and industry has proven to be very beneficial, if not vital, for my own research. 
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Interests and Activities}
+
+Ongoing project: building a large V-plotter robot by use of the Arduino-platform. \vspace{0.2cm} \\ 
+App development of `Drum Machine', an offline drum sequencer for Sailfish OS smartphones.\vspace{0.2cm} \\ 
+Travelling and meeting people. Inline skating. Playing saxophone and EWI (electronic sax), electric guitar and building synthesizers with Axoloti. Enjoying arts and literature.
+\\
+\\
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+\section{Publications}
+
+
+\nocite{*}
+\renewcommand*{\bibfont}{\small}
+\printbibliography[heading=none]
+
+%------------------------------------------------
+%\bibliographystyle{unsrt}
+%\bibliography{biblio2}
+
+\end{document}
+
